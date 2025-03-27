@@ -1,0 +1,88 @@
+├── .env
+├── .env.example
+├── .gitignore
+├── .qodo
+├── eslint.config.mjs
+├── migrations
+│  ├── 1677058000000_create-table-albums.js
+│  ├── 1677058001000_create-table-songs.js
+│  ├── 1677058002000_create-table-users.js
+│  ├── 1677058003000_create-table-authentications.js
+│  ├── 1677058004000_create-table-playlists.js
+│  ├── 1677058005000_create-table-playlist-songs.js
+│  ├── 1677058006000_create-table-collaborations.js
+│  ├── 1677058007000_create-table-playlist-song-activities.js
+│  └── 1677058008000_add-foreign-key-to-songs.js
+├── package-lock.json
+├── package.json
+├── README.md
+├── src
+│  ├── api
+│  │  ├── albums
+│  │  │  ├── handler.js
+│  │  │  ├── index.js
+│  │  │  └── routes.js
+│  │  ├── authentications
+│  │  │  ├── handler.js
+│  │  │  ├── index.js
+│  │  │  └── routes.js
+│  │  ├── collaborations
+│  │  │  ├── handler.js
+│  │  │  ├── index.js
+│  │  │  └── routes.js
+│  │  ├── playlists
+│  │  │  ├── handler.js
+│  │  │  ├── index.js
+│  │  │  └── routes.js
+│  │  ├── songs
+│  │  │  ├── handler.js
+│  │  │  ├── index.js
+│  │  │  └── routes.js
+│  │  └── users
+│  │    ├── handler.js
+│  │    ├── index.js
+│  │    └── routes.js
+│  ├── exceptions
+│  │  ├── AuthenticationError.js
+│  │  ├── AuthorizationError.js
+│  │  ├── ClientError.js
+│  │  ├── InvariantError.js
+│  │  └── NotFoundError.js
+│  ├── middleware
+│  │  └── auth.js
+│  ├── server.js
+│  ├── services
+│  │  └── postgres
+│  │    ├── AlbumsService.js
+│  │    ├── AuthenticationsService.js
+│  │    ├── CollaborationsService.js
+│  │    ├── PlaylistActivitiesService.js
+│  │    ├── PlaylistSongsService.js
+│  │    ├── PlaylistsService.js
+│  │    ├── SongsService.js
+│  │    └── UsersService.js
+│  ├── utils
+│  │  ├── index.js
+│  │  └── tokenManager.js
+│  └── validator
+│    ├── albums
+│    │  ├── index.js
+│    │  └── schema.js
+│    ├── authentications
+│    │  ├── index.js
+│    │  └── schema.js
+│    ├── collaborations
+│    │  ├── index.js
+│    │  └── schema.js
+│    ├── playlists
+│    │  ├── index.js
+│    │  └── schema.js
+│    ├── songs
+│    │  ├── index.js
+│    │  └── schema.js
+│    └── users
+│      ├── index.js
+│      └── schema.js
+└── test
+  ├── Open Music API V2 Test.postman_collection.json
+  └── OpenMusic API Test.postman_environment.json
